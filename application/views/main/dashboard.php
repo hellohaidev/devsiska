@@ -79,7 +79,8 @@
             </span>
             </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>Kecamatan"><i class="fa fa-circle-o"></i> Kegiatan</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>Kegiatan"><i class="fa fa-circle-o"></i> Kegiatan</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>Kecamatan"><i class="fa fa-circle-o"></i> Kecamatan</a></li>
             
           </ul>
         </li>
