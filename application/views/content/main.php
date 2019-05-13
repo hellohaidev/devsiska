@@ -1,21 +1,19 @@
-<h1>Data Kegiatan</h1>
+<section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3>150</h3>
 
-
-<table id="kegiatan" class="table" border="1">
-	<thead>
-		<tr>
-			<th>Nama Kegiatan</th>
-			
-		</tr>	
-	</thead>
-	<tbody>
-		<?php foreach($data_kegiatan as $item) { ?>
-
-		<tr>
-			
-			<td><?php echo $item->Nama_Kegiatan  ?></td>
-		</tr>
-
-		<?php } ?>
-	</tbody>
-</table>
+              <p>New Orders</p>
+            </div>
+            <div class="icon">
+              <i class="ion ion-bag"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+    </div>
+</section>
