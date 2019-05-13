@@ -4,7 +4,6 @@
 	<thead>
 		<tr>
 			<th>Nama Kecamatan</th>
-			<th>Nama Desa</th>
 		</tr>	
 	</thead>
 	<tbody>
@@ -12,7 +11,6 @@
 
 		<tr>
 			<td><?php echo $item->Nama_Kecamatan ?></td>
-			<td><?php echo $item->Nama_Desa ?></td>
 		</tr>
 
 		<?php } ?>
