@@ -3,8 +3,11 @@
 class Dashboard extends CI_Controller {
 
     public function index(){
-            
-        $template['main_admin'] = "content/server"; 
-        $this->load->view('main/dashboard',$template);
+        
+        $data['data_kegiatan'] = $this->kegiatan_model->getKegiatan();
+        $data['main_admin'] = "content/main"; 
+        $this->load->view('main/dashboard',$data);
     }
+
+   
 }
