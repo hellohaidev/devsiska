@@ -15,11 +15,11 @@ class Dashboard_model extends CI_Model
 	}
 
 	/*
-		Total Desa
+		Total Kecamatan
 	*/
 
-	public function get_count_desa(){
-		$query_count = $this->db->count_all_results('Ref_Desa');
+	public function get_count_kecamatan(){
+		$query_count = $this->db->count_all_results('Ref_Kecamatan');
 		return $query_count;
 	}
 
