@@ -13,9 +13,10 @@ class RelasiKegiatan extends CI_Controller
 		$this->load->view('main/dashboard',$data);
 	}
 
-	public function detail(){
-
-
+	public function detail($id){
+		$data['detail_data'] = $this->relasiKegiatan_model->get_relasi_kegiatan_by_id($id);
+		$data['main_admin'] = 'content/kegiatan/detail';
+		$this->load->view('main/dashboard',$data);
 
 	}
 }
