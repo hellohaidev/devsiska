@@ -81,7 +81,8 @@
           <ul class="treeview-menu">
             <li class="active"><a href="<?php echo base_url() ?>Kegiatan"><i class="fa fa-circle-o"></i> Kegiatan</a></li>
             <li class="active"><a href="<?php echo base_url() ?>Kecamatan"><i class="fa fa-circle-o"></i> Kecamatan</a></li>
-            
+            <li class="active"><a href="<?php echo base_url() ?>Desa"><i class="fa fa-circle-o"></i>Desa</a></li>
+
           </ul>
         </li>
         <li class="treeview">
@@ -339,6 +340,7 @@
 <script>
     // menambahkan datatable di dalam sini
     $('#kegiatan').DataTable();
+    $('#data_desa').DataTable();
     $('#data_relasi_kegiatan').DataTable({
       "scrollX": true
     });
