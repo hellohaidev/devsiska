@@ -23,5 +23,9 @@ class Dashboard_model extends CI_Model
 		return $query_count;
 	}
 
-
+	public function get_count_desa(){
+		$query_count = $this->db->count_all_results('Ref_Desa');
+		return $query_count;
+	}
+	
 }
