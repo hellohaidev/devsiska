@@ -337,8 +337,13 @@
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
 
 <script>
-   
+    // menambahkan datatable di dalam sini
     $('#kegiatan').DataTable();
+    $('#data_relasi_kegiatan').DataTable({
+      "scrollX": true
+    });
+
+
 
 </script>
 
