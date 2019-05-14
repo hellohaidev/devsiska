@@ -4,7 +4,7 @@
 <table id="kegiatan" class="table" border="1">
 	<thead>
 		<tr>
-			<th>Id Kegiatan</th>
+			<th>Kode Kegiatan</th>
 			<th>Nama Kegiatan</th>
 			<th>Detail</th>
 		</tr>	
