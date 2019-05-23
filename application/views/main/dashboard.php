@@ -18,7 +18,7 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/skins/_all-skins.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
-  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/css/select2.min.css" rel="stylesheet" />
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -98,11 +98,26 @@
             
           </ul>
         </li>
+
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-search"></i> <span>Pencarian</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+            </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="<?php echo base_url() ?>Pencarian"><i class="fa fa-circle-o"></i> Pencarian Desa By Kecamatan</a></li>
+           <li class="active"><a href="<?php echo base_url() ?>Pencarian/pagu"><i class="fa fa-circle-o"></i> Pencarian Kegiatan</a></li>
+
+          </ul>
+        </li>
+      
         <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
         <li class="header">Configuration</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Settings</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Logout</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information Server</span></a></li>
+        
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -336,14 +351,16 @@
 <script src="<?php echo base_url() ?>assets/js/pages/dashboard.js"></script>
 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<!-- Select2 -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
 <script>
+    $('.select2').select2()
+    $('.select3').select2()
     // menambahkan datatable di dalam sini
     $('#kegiatan').DataTable();
     $('#data_desa').DataTable();
-    $('#data_relasi_kegiatan').DataTable({
-      "scrollX": true
-    });
+    $('#data_relasi_kegiatan').DataTable();
 
 
 
