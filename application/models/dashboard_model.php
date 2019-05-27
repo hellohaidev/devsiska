@@ -27,5 +27,26 @@ class Dashboard_model extends CI_Model
 		$query_count = $this->db->count_all_results('Ref_Desa');
 		return $query_count;
 	}
+
+	public function get_sum_anggaran(){
+		$this->db->select_sum('Anggaran');
+		$query = $this->db->get('Ta_Anggaran');
+		if ($query->num_rows()>0)
+		{
+			return $query->row()->Anggaran;
+		}
+		else
+		{
+			return 0;
+		}
+
+
+
+		/*
+		return $this->db->select('(SELECT SUM (Anggaran) FROM Ta_Anggaran) as total_anggaran');
+		
+		*/
+			
+	}
 	
 }
