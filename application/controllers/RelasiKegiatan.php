@@ -19,4 +19,16 @@ class RelasiKegiatan extends CI_Controller
 		$this->load->view('main/dashboard',$data);
 
 	}
+
+	public function detailRealisasi($idKeg,$idDesa) {
+		$data['get_realisasi_detail_by_kode_desa_info'] = $this->relasiKegiatan_model->get_realisasi_detail_by_kode_desa_info($idKeg,$idDesa);
+		$data['get_sum_volume_realisasi_kegiatan'] = $this->relasiKegiatan_model->get_sum_volume_realisasi_kegiatan($idKeg,$idDesa);
+		$data['realisasi_anggaran_kegiatan'] = $this->relasiKegiatan_model->get_sum_anggaran_realisasi_kegiatan($idKeg,$idDesa);
+		$data['detail_realisasi_desa'] = $this->relasiKegiatan_model->get_realisasi_detail_by_kode_desa($idKeg,$idDesa);
+		$data['main_admin'] = 'content/kegiatan/detailRealisasi';
+		$this->load->view('main/dashboard',$data);
+
+	}
+
+
 }
