@@ -10,6 +10,7 @@
 			<th>Nama PPTKD</th>
 			<th>Lokasi</th>
 			<th>Waktu</th>
+			<th>Realisasi</th>
 		</tr>	
 	</thead>
 	<tbody>
@@ -54,6 +55,9 @@
 			<td><?php echo $item->Nm_PPTKD ?></td>
 			<td><?php echo $lokasi ?></td>
 			<td><?php echo $waktu ?></td>
+			<td>
+				<a href="<?php echo base_url() ?>RelasiKegiatan/detailRealisasi/<?php echo $item->ID_Keg ?>/<?php echo $item->Kd_Desa ?>" class="btn btn-md btn-warning">Realisasi</a>
+			</td>
 		</tr>
 
 		<?php } ?>

@@ -38,15 +38,7 @@ class Dashboard_model extends CI_Model
 		else
 		{
 			return 0;
-		}
-
-
-
-		/*
-		return $this->db->select('(SELECT SUM (Anggaran) FROM Ta_Anggaran) as total_anggaran');
-		
-		*/
-			
+		}			
 	}
 	
 }
