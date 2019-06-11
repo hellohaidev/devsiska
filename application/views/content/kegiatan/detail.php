@@ -56,7 +56,7 @@
 			<td><?php echo $lokasi ?></td>
 			<td><?php echo $waktu ?></td>
 			<td>
-				<a href="<?php echo base_url() ?>RelasiKegiatan/detailRealisasi/<?php echo $item->ID_Keg ?>/<?php echo $item->Kd_Desa ?>" class="btn btn-md btn-warning">Realisasi</a>
+				<a href="<?php echo base_url() ?>RelasiKegiatan/detailRealisasi/<?php echo $item->Kd_Keg ?>/<?php echo $item->Kd_Keg ?>" class="btn btn-md btn-warning">Realisasi</a>
 			</td>
 		</tr>
 

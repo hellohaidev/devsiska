@@ -22,9 +22,9 @@ class relasiKegiatan_model extends CI_Model
 	public function get_realisasi_detail_by_kode_desa_info($idKeg,$idDesa){
 		$this->db->select('*');
         $this->db->from('Ta_KegiatanOutput');
-        $this->db->join('Ta_Kegiatan', 'Ta_Kegiatan.Kd_Desa = Ta_KegiatanOutput.Kd_Desa','inner');
-        $this->db->where('Ta_Kegiatan.ID_Keg',$idKeg);
-        $this->db->where('Ta_KegiatanOutput.Kd_Desa',$idDesa);
+        $this->db->join('Ta_Kegiatan', 'Ta_Kegiatan.Kd_Keg = Ta_KegiatanOutput.Kd_Keg','inner');
+        $this->db->where('Ta_Kegiatan.Kd_Keg',$idKeg);
+        $this->db->where('Ta_KegiatanOutput.Kd_Keg',$idDesa);
       	
         $dataInfoRealisasi = $this->db->get();
        
@@ -34,9 +34,9 @@ class relasiKegiatan_model extends CI_Model
 	public function get_realisasi_detail_by_kode_desa($idKeg,$idDesa){
 		$this->db->select('*');
         $this->db->from('Ta_KegiatanOutput');
-        $this->db->join('Ta_Kegiatan', 'Ta_Kegiatan.Kd_Desa = Ta_KegiatanOutput.Kd_Desa','inner');
-        $this->db->where('Ta_Kegiatan.ID_Keg',$idKeg);
-        $this->db->where('Ta_KegiatanOutput.Kd_Desa',$idDesa);
+        $this->db->join('Ta_Kegiatan', 'Ta_Kegiatan.Kd_Keg = Ta_KegiatanOutput.Kd_Keg','inner');
+        $this->db->where('Ta_Kegiatan.Kd_Keg',$idKeg);
+        $this->db->where('Ta_KegiatanOutput.Kd_Keg',$idDesa);
       	
         $dataInfoRealisasi = $this->db->get();
        
@@ -46,9 +46,9 @@ class relasiKegiatan_model extends CI_Model
 	public function get_sum_anggaran_realisasi_kegiatan($idKeg,$idDesa){
 		$this->db->select_sum('Anggaran');
         $this->db->from('Ta_KegiatanOutput');
-        $this->db->join('Ta_Kegiatan', 'Ta_Kegiatan.Kd_Desa = Ta_KegiatanOutput.Kd_Desa','inner');
-        $this->db->where('Ta_Kegiatan.ID_Keg',$idKeg);
-        $this->db->where('Ta_KegiatanOutput.Kd_Desa',$idDesa);
+        $this->db->join('Ta_Kegiatan', 'Ta_Kegiatan.Kd_Keg = Ta_KegiatanOutput.Kd_Keg','inner');
+        $this->db->where('Ta_Kegiatan.Kd_Keg',$idKeg);
+        $this->db->where('Ta_KegiatanOutput.Kd_Keg',$idDesa);
 		$query = $this->db->get();
 		
       	
@@ -64,9 +64,9 @@ class relasiKegiatan_model extends CI_Model
 	public function get_sum_volume_realisasi_kegiatan($idKeg,$idDesa){
 		$this->db->select_sum('Volume');
         $this->db->from('Ta_KegiatanOutput');
-        $this->db->join('Ta_Kegiatan', 'Ta_Kegiatan.Kd_Desa = Ta_KegiatanOutput.Kd_Desa','inner');
-        $this->db->where('Ta_Kegiatan.ID_Keg',$idKeg);
-        $this->db->where('Ta_KegiatanOutput.Kd_Desa',$idDesa);
+        $this->db->join('Ta_Kegiatan', 'Ta_Kegiatan.Kd_Keg = Ta_KegiatanOutput.Kd_Keg','inner');
+        $this->db->where('Ta_Kegiatan.Kd_Keg',$idKeg);
+        $this->db->where('Ta_KegiatanOutput.Kd_Keg',$idDesa);
 		$query = $this->db->get();
 		
       	
