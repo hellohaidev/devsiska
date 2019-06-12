@@ -15,17 +15,53 @@
 		</tr>
 	</thead>
 	<tbody>
+		
+
 		<?php 
+
 			foreach ($detail_realisasi_desa as $value) {
+		
+		if ($value->Anggaran){
+
+			$anggaran = number_format($value->Anggaran);
+		}
+
+		if (empty($value->Anggaran)){
+
+			$anggaran = '<label class="label-danger">Tidak ada Anggaran</label>'; 
+		}
+
+		if ($value->Volume){
+
+			$volume = $value->Volume;
+		}
+
+		if (empty($value->Volume)){
+
+			$volume = '<label class="label-danger">Tidak ada Volume</label>';
+		}
+
+		if ($value->Satuan){
+
+			$satuan = $value->Satuan;
+		}
+
+		if (empty($value->Satuan)){
+
+			$satuan = '<label class="label-danger">Tidak ada Satuan</label>';
+		}
+
+		
 		?>		
-		<tr>
-			<td><?php echo $value->Nama_Paket; ?></td>
-			<td>Rp. <?php echo number_format($value->Anggaran); ?></td>
-			<td><?php echo $value->Volume; ?></td>
-			<td><?php echo $value->Satuan; ?></td>
+		 <tr>
+			<td><?php echo $value->Nama_Paket ?></td>
+			<td>Rp. <?php echo $anggaran ?></td>
+			<td><?php echo $volume ?></td>
+			<td><?php echo $satuan ?></td>
 		</tr>
 
-<?php } ?>
+<?php }  ?> 
+
 	</tbody>
 </table>
 
