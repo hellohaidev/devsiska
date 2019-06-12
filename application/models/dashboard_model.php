@@ -40,5 +40,18 @@ class Dashboard_model extends CI_Model
 			return 0;
 		}			
 	}
+
+	public function get_sum_pak(){
+		$this->db->select_sum('AnggaranStlhPAK');
+		$query = $this->db->get('Ta_Anggaran');
+		if ($query->num_rows()>0)
+		{
+			return $query->row()->AnggaranStlhPAK;
+		}
+		else
+		{
+			return 0;
+		}
+	}
 	
 }

@@ -61,5 +61,18 @@
             <a href="<?php echo base_url(); ?>" class="small-box-footer">More info<i class="fa fa-arrow-circle-right"></i></a>
           </div>
         </div>
+      <div class="col-lg-6 col-xs-6">
+        <div class="small-box bg-light-blue">
+          <div class="inner">
+            <h3>Rp. <?php echo number_format($total_stlhpak,2)?></h3>
+            <p>Total Anggaran Desa Kabupaten Bogor Setelah Perubahan</p>            
+          </div>
+          <div class="icon">
+            <i class="ion ion-bag"></i>
+          </div>
+          <a href="<?php echo base_url();?>" class ="small-box-footer">more info<i class="fa
+          fa-arrow-circle-right"></i></a>
+        </div>
+      </div>
     </div>
 </section>
