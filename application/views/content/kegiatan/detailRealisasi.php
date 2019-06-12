@@ -1,8 +1,39 @@
+<?php 
+if ($realisasi_anggaran_kegiatan){
+
+	$totalanggaran = number_format($realisasi_anggaran_kegiatan,2);
+}
+
+if  (empty($realisasi_anggaran_kegiatan)){
+
+	$totalanggaran ='<label class="label-danger">Total anggaran kosong</label>';
+}
+
+if ($get_sum_volume_realisasi_kegiatan){
+
+	$totalvolume = $get_sum_volume_realisasi_kegiatan;
+}
+ 
+if (empty($get_sum_volume_realisasi_kegiatan)) {
+
+	$totalvolume = '<label class="label-danger">Total volume kosong</label>';
+} 
+
+if ($get_realisasi_detail_by_kode_desa_info->Satuan){
+
+	$satuan = $get_realisasi_detail_by_kode_desa_info->Satuan;
+}
+
+if (empty($get_realisasi_detail_by_kode_desa_info->Satuan)){
+
+	$satuan = '<label class="label-danger">Satuan kosong</label>';
+}
+?>
 
  <ul class="list-group">
-  <li class="list-group-item">Total Anggaran : Rp. <?php echo number_format($realisasi_anggaran_kegiatan,2) ?> </li>
-  <li class="list-group-item">Total Volume : <?php echo $get_sum_volume_realisasi_kegiatan; ?></li>
-  <li class="list-group-item">Satuan : <?php echo $get_realisasi_detail_by_kode_desa_info->Satuan; ?></li>
+  <li class="list-group-item">Total Anggaran : Rp. <?php echo $totalanggaran; ?> </li>
+  <li class="list-group-item">Total Volume : <?php echo $totalvolume; ?></li>
+  <li class="list-group-item">Satuan : <?php echo $satuan; ?></li>
 </ul> 
 
 <table id="data_relasi_kegiatan" class="table table-responsive">
