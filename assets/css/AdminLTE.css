@@ -1513,7 +1513,7 @@ a:focus {
 .small-box:hover .icon {
   font-size: 95px;
 }
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .small-box {
     text-align: center;
   }
@@ -1523,6 +1523,10 @@ a:focus {
   .small-box p {
     font-size: 12px;
   }
+  .amount{
+    font-size: 10px;
+  }
+
 }
 /*
  * Component: Box

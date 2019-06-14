@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/bootstrap.min.css">
   
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/font/font-awesome.min.css">
-
+  
   <!-- Theme style -->
   <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -73,27 +72,27 @@
         <li><a href="<?php echo base_url() ?>Dashboard"><i class="fa fa-book"></i> <span>Dashboard</span></a></li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Data Master</span>
+            <i class="fas fa-tachometer-alt">&nbsp;&nbsp;</i><span>Data Master</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
             </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>Kegiatan"><i class="fa fa-circle-o"></i> Kegiatan</a></li>
-            <li class="active"><a href="<?php echo base_url() ?>Kecamatan"><i class="fa fa-circle-o"></i> Kecamatan</a></li>
-            <li class="active"><a href="<?php echo base_url() ?>Desa"><i class="fa fa-circle-o"></i>Desa</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>Kegiatan"><i class="far fa-circle">&nbsp;&nbsp;</i>Kegiatan</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>Kecamatan"><i class="far fa-circle">&nbsp;&nbsp;</i> Kecamatan</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>Desa"><i class="far fa-circle">&nbsp;&nbsp;</i>Desa</a></li>
 
           </ul>
         </li>
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Data Relasi</span>
+            <i class="fas fa-tachometer-alt">&nbsp;&nbsp;</i><span>Data Relasi</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
             </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>RelasiKegiatan"><i class="fa fa-circle-o"></i> Kegiatan</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>RelasiKegiatan"><i class="far fa-circle">&nbsp;&nbsp;</i>Kegiatan</a></li>
            
             
           </ul>
@@ -107,16 +106,16 @@
             </span>
             </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="<?php echo base_url() ?>Pencarian"><i class="fa fa-circle-o"></i> Pencarian Desa By Kecamatan</a></li>
-           <li class="active"><a href="<?php echo base_url() ?>Pencarian/pagu"><i class="fa fa-circle-o"></i> Pencarian Kegiatan</a></li>
+            <li class="active"><a href="<?php echo base_url() ?>Pencarian"><i class="far fa-circle">&nbsp;&nbsp;</i> Pencarian Desa By Kecamatan</a></li>
+           <li class="active"><a href="<?php echo base_url() ?>Pencarian/pagu"><i class="far fa-circle">&nbsp;&nbsp;</i> Pencarian Kegiatan</a></li>
 
           </ul>
         </li>
       
         <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
         <li class="header">Configuration</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Settings</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Logout</span></a></li>
+        <li><a href="#"><i class="far fa-circle text-red">&nbsp;&nbsp;</i><span>Settings</span></a></li>
+        <li><a href="#"><i class="far fa-circle text-yellow">&nbsp;&nbsp;</i><span>Logout</span></a></li>
         
       </ul>
     </section>
@@ -344,7 +343,7 @@
 
 <!-- Bootstrap 3.3.7 -->
 <script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
-
+<script src="https://kit.fontawesome.com/93667fea08.js"></script>
 <!-- AdminLTE App -->
 <script src="<?php echo base_url() ?>assets/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
