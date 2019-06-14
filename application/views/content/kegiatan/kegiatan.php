@@ -1,7 +1,7 @@
 <h1>Data Kegiatan</h1>
 
 
-<table id="kegiatan" class="table" border="1">
+<table id="kegiatanMaster" class="table" border="1">
 	<thead>
 		<tr>
 			<th>Nama Kegiatan</th>

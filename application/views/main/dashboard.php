@@ -25,7 +25,6 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
-
   <!-- Google Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
@@ -344,12 +343,14 @@
 <!-- Bootstrap 3.3.7 -->
 <script src="<?php echo base_url() ?>assets/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/93667fea08.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
 <!-- AdminLTE App -->
 <script src="<?php echo base_url() ?>assets/js/adminlte.min.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?php echo base_url() ?>assets/js/pages/dashboard.js"></script>
 
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+
 <!-- Select2 -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.7/js/select2.min.js"></script>
@@ -357,9 +358,16 @@
     $('.select2').select2()
     $('.select3').select2()
     // menambahkan datatable di dalam sini
+    $('#kegiatanMaster').DataTable();  
     $('#kegiatan').DataTable();
+    $('#data_kecamatan').DataTable();
     $('#data_desa').DataTable();
-    $('#data_relasi_kegiatan').DataTable();
+    $('#data_relasi_kegiatan').DataTable({
+      "scrollX":true
+    });
+    $('#detail').DataTable({
+        "scrollX":true
+    });
 
 
 

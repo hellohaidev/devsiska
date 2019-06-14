@@ -36,10 +36,10 @@ if (empty($get_realisasi_detail_by_kode_desa_info->Satuan)){
   <li class="list-group-item">Satuan : <?php echo $satuan; ?></li>
 </ul> 
 
-<table id="data_relasi_kegiatan" class="table table-responsive">
+<table id="data_relasi_kegiatan" class="display nowrap" style="width:100%">
 	<thead>
 		<tr>
-			<th>Nama Paket</th>
+			<th>Nama Paket</th>	
 			<th>Anggaran</th>
 			<th>Volume</th>
 			<th>Satuan</th>

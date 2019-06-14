@@ -1,6 +1,6 @@
 <h1>Data Desa</h1>
 
-<table id="data_desa" class="table">
+<table id="data_desa" class="table" border="1">
 	<thead>
 		<tr>
 			<th>Nama Desa</th>

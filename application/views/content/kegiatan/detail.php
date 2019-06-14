@@ -1,6 +1,7 @@
 <h1>Detail Data Kegiatan</h1>
 <a href="<?php echo base_url() ?>RelasiKegiatan" class="btn btn-primary">Back</a>
-<table id="data_relasi_kegiatan" class="table table-responsive">
+<div class="dataTables_wrapper">
+<table id="detail" class="display nowrap" style="width:100%">
 	<thead>
 		<tr>
 			<th>Jenis Kegiatan</th>
@@ -63,3 +64,4 @@
 		<?php } ?>
 	</tbody>
 </table>
+</div>

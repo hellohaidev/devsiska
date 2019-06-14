@@ -1,6 +1,6 @@
 <h1>Data Kecamatan</h1>
 
-<table id="data_kecamatan" class="table">
+<table id="data_kecamatan" class="table" border="1">
 	<thead>
 		<tr>
 			<th>Nama Kecamatan</th>
